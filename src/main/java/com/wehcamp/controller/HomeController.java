@@ -14,5 +14,6 @@ public class HomeController {
 	public ResponseEntity<String> getMassage(
 			@RequestParam(name = "massage", required = false, defaultValue = "User") String msg) {
 		return ResponseEntity.ok().body("Good morning " + msg);
+		
 	}
 }
